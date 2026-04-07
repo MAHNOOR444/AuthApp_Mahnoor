@@ -1,0 +1,28 @@
+{
+  "name": "authapp_mahnoor",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "npx mocha test/unit/*.test.js test/integration/*.test.js --exit",
+    "test:unit": "npx mocha test/unit/*.test.js --exit",
+    "test:integration": "npx mocha test/integration/*.test.js --exit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "chai": "^6.2.2",
+    "mocha": "^11.7.5",
+    "supertest": "^7.2.2"
+  },
+  "dependencies": {
+    "body-parser": "^2.2.2",
+    "ejs": "^5.0.1",
+    "express": "^5.2.1"
+  }
+}

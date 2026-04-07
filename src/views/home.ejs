@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Home - AuthApp</title>
+</head>
+<body>
+    <div class="container dashboard-container">
+        <h1>Dashboard</h1>
+        <p>Welcome, <strong><%= user.username %></strong>!</p>
+        <p>Your email is: <strong><%= user.email %></strong></p>
+        <div class="buttons">
+            <a href="/login" class="btn">Logout</a>
+        </div>
+    </div>
+</body>
+</html>
