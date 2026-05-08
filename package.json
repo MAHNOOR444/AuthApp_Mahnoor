@@ -9,7 +9,10 @@
     "start": "node src/app.js",
     "test": "npx mocha test/unit/*.test.js test/integration/*.test.js --exit",
     "test:unit": "npx mocha test/unit/*.test.js --exit",
-    "test:integration": "npx mocha test/integration/*.test.js --exit"
+    "test:integration": "npx mocha test/integration/*.test.js --exit",
+    "test:report": "npx mocha test/unit/*.test.js test/integration/*.test.js --exit --reporter mochawesome --reporter-options reportDir=reports,reportFilename=test-report,html=true,json=true",
+    "test:unit:report": "npx mocha test/unit/*.test.js --exit --reporter mochawesome --reporter-options reportDir=reports,reportFilename=unit-report,html=true,json=true",
+    "test:integration:report": "npx mocha test/integration/*.test.js --exit --reporter mochawesome --reporter-options reportDir=reports,reportFilename=integration-report,html=true,json=true"
   },
   "keywords": [],
   "author": "",
@@ -18,6 +21,9 @@
   "devDependencies": {
     "chai": "^6.2.2",
     "mocha": "^11.7.5",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^4.4.1",
+    "mochawesome-report-generator": "^6.3.2",
     "supertest": "^7.2.2"
   },
   "dependencies": {
