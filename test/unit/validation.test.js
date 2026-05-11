@@ -6,7 +6,7 @@ describe('Unit Tests: Validation Utilities', () => {
     
     describe('Email Validation', () => {
         it('should return true for valid email', () => {
-            expect(validateEmail('test@example.com')).to.be.true;
+            expect(validateEmail('maha@example.com')).to.be.true;
         });
 
         it('should return false for invalid email (no @)', () => {
